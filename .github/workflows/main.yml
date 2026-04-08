@@ -36,3 +36,8 @@ jobs:
 
       - name: Build for production
         run: npm run build
+
+      - name: Security Check (Secret test)
+        run: echo "Accessing database with secret password..."
+        env:
+          [cite_start]DB_PASS: ${{ secrets.DATABASE_PASSWORD }}
