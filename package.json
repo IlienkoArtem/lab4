@@ -1,0 +1,28 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "Smart Saver MVP - Build Automation",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,json,css,html}\"",
+    "test:unit": "vitest",
+    "test:unit:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@vitest/coverage-v8": "^1.6.1",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "vite": "^5.1.4",
+    "vitest": "^1.6.1"
+  }
+}
